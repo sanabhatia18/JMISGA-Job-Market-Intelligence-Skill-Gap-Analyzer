@@ -1,0 +1,485 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #172033;
+}
+
+
+/* --------------------------------------------------
+HEADER
+-------------------------------------------------- */
+
+.header {
+    background: #111827;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.header p {
+    margin: 5px 0 0;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+
+/* --------------------------------------------------
+MAIN PAGE
+-------------------------------------------------- */
+
+.container {
+    width: 88%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+/* --------------------------------------------------
+HERO
+-------------------------------------------------- */
+
+.hero {
+    padding: 70px 0 50px;
+    max-width: 850px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    line-height: 1.15;
+    margin: 8px 0 18px;
+}
+
+.hero > p:last-child {
+    color: #64748b;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.tag {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+
+/* --------------------------------------------------
+PANELS
+-------------------------------------------------- */
+
+.panel {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 35px;
+    margin-bottom: 35px;
+}
+
+.section-heading {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.section-heading > span {
+    background: #eff6ff;
+    color: #2563eb;
+    font-weight: bold;
+    padding: 9px 11px;
+    border-radius: 8px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.section-heading p {
+    margin: 7px 0 0;
+    color: #64748b;
+}
+
+
+/* --------------------------------------------------
+FORMS
+-------------------------------------------------- */
+
+.form-box {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 35px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    height: 46px;
+    padding: 0 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    background: white;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.input-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+}
+
+.two-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.form-box > input {
+    margin-bottom: 18px;
+}
+
+button {
+    height: 46px;
+    padding: 0 22px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+
+/* --------------------------------------------------
+RESULT HEADING
+-------------------------------------------------- */
+
+.results-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 30px 0 18px;
+}
+
+.results-title h2 {
+    margin: 4px 0 0;
+}
+
+.results-title > p {
+    color: #64748b;
+    font-size: 13px;
+}
+
+
+/* --------------------------------------------------
+CAREER CARDS
+-------------------------------------------------- */
+
+.career-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.career-card,
+.comparison-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 22px;
+    background: white;
+}
+
+.career-card:first-child {
+    grid-column: span 2;
+    border-color: #93c5fd;
+    background: #f8fbff;
+}
+
+.career-top,
+.comparison-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.career-number {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #64748b;
+    margin: 0 0 6px;
+}
+
+.career-card h3,
+.comparison-card h3 {
+    margin: 0;
+    font-size: 21px;
+}
+
+.match-circle {
+    min-width: 68px;
+    height: 42px;
+    padding: 0 10px;
+    border-radius: 21px;
+    background: #eff6ff;
+    color: #1d4ed8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+/* --------------------------------------------------
+PROGRESS BAR
+-------------------------------------------------- */
+
+.progress {
+    width: 100%;
+    height: 7px;
+    background: #e5e7eb;
+    border-radius: 10px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #2563eb;
+    border-radius: 10px;
+}
+
+
+/* --------------------------------------------------
+MARKET STATS
+-------------------------------------------------- */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.stat {
+    background: #f8fafc;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.stat span {
+    display: block;
+    color: #64748b;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.stat strong {
+    font-size: 15px;
+}
+
+
+/* --------------------------------------------------
+SKILLS
+-------------------------------------------------- */
+
+.skill-box {
+    padding: 13px 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.skill-box p {
+    margin: 5px 0 0;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.skill-label {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.matched {
+    background: #f0fdf4;
+    color: #166534;
+}
+
+.missing {
+    background: #fff7ed;
+    color: #9a3412;
+}
+
+
+/* --------------------------------------------------
+WHAT-IF TABLE
+-------------------------------------------------- */
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #f8fafc;
+    color: #64748b;
+    font-size: 12px;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 15px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+td {
+    font-size: 14px;
+}
+
+.career-name {
+    font-weight: bold;
+}
+
+.new-match {
+    color: #166534;
+    font-weight: bold;
+}
+
+
+/* --------------------------------------------------
+COMPARISON
+-------------------------------------------------- */
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+
+/* --------------------------------------------------
+FOOTER
+-------------------------------------------------- */
+
+footer {
+    width: 88%;
+    max-width: 1400px;
+    margin: 20px auto 40px;
+    color: #64748b;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* --------------------------------------------------
+MOBILE
+-------------------------------------------------- */
+
+@media (max-width: 850px) {
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .hero {
+        padding-top: 45px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .panel {
+        padding: 22px;
+    }
+
+    .career-grid,
+    .comparison-grid,
+    .two-inputs {
+        grid-template-columns: 1fr;
+    }
+
+    .career-card:first-child {
+        grid-column: span 1;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .input-row {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        width: 100%;
+    }
+
+}
